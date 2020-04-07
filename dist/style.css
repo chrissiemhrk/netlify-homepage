@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 0;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.container {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 1em;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.hr {
+  position: relative;
+  border-bottom: 2px solid rgba(14, 30, 37, 0.09);
+}
+
+.primary-nav {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.site-header ul {
+  margin-left: 1.5rem;
+}
+
+.nav ul {
+  align-items: center;
+  display: flex;
+  margin: 0.5em -0.5em;
+  line-height: 2;
+}
+
+.primary-nav li {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 0 0.5em;
+}
+
+.primary-nav li a {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.netlify-logo {
+  align-items: center;
+  display: flex;
+  margin: 0.5em -0.5em;
+  line-height: 2;
+}
+
+.fa-chevron-down {
+  padding: 0.5rem;
+}
+
+.secondary-nav {
+  align-self: center;
+}
+
+.vr {
+  border-right: 2px solid rgba(14, 30, 37, 0.09);
+}
+
+.nav li {
+  padding: 0.5em;
+}
+
+.menu-button {
+  display: none;
+  align-self: center;
+}
+
+.button {
+  border: 0;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  transition: all 0.15s ease;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.mega-nav {
+  width: 100%;
+  --transitionSpeed: 150ms;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 27%);
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: calc(100% - 3px);
+  transform: translateY(-5px) scaleX(0.98);
+  transition-duration: var(--transitionSpeed);
+  transition-property: transform, opacity;
+  z-index: 99;
+}
+
+.mega-nav-panel {
+  padding: 1em 1.618em 1em 1.618em;
+  position: relative;
+}
+
+.mega-nav-panel--block-link {
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.mega-nav-title {
+  align-items: center;
+  color: #0e1e25;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.618em;
+}
+
+.mega-nav-description {
+  color: #0e1e25;
+  font-size: 0.7rem;
+  line-height: 1.15;
+}
+
+p {
+  max-width: 37.577em;
+}
+
+.mega-nav-progress-illustrations {
+  display: flex;
+  margin-top: 1.3em;
+  text-align: center;
+}
+
+.mega-nav-progress-illustrations-plus {
+  color: rgba(14, 30, 37, 0.25);
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: -0.38em 0.3em 0 0.3em;
+  transition: color var(--transitionSpeed);
+}
+
+.mega-nav-progress-illustrations-title {
+  color: #0e1e25;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+}
