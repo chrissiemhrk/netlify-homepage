@@ -46,6 +46,11 @@ li {
   list-style: none;
 }
 
+.section footer {
+  font-size: 0.85rem;
+  margin-top: 1.618em;
+}
+
 /* Navbar */
 
 .nav {
@@ -486,4 +491,112 @@ li {
 .card-links {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* Validation Section */
+.scrollable-wrapper {
+  margin-top: 2.618em;
+  overflow: hidden;
+}
+
+.scrollable {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 2.618em;
+}
+
+.scrollable .card {
+  margin: 0 0.5em;
+  max-width: 72vw;
+}
+
+.card--tweet {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  box-sizing: content-box;
+  width: 23.224em;
+}
+
+.validation .card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 40px rgba(14, 30, 37, 0.16);
+  color: rgba(14, 30, 37, 0.8);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  max-width: 23.224em;
+  padding: 1.618em;
+  position: relative;
+  text-align: left;
+  text-shadow: none;
+  z-index: 10;
+}
+
+.card--tweet cite {
+  color: rgba(14, 30, 37, 0.54);
+  font-style: normal;
+  font-weight: 500;
+  margin-top: auto;
+  padding-top: 1.618em;
+}
+
+.card--tweet .avatar {
+  background: #fff;
+  border-radius: 50%;
+  float: left;
+  height: 3em;
+  margin-right: 1em;
+  width: 3em;
+}
+
+.card--tweet cite a {
+  color: inherit;
+  position: static;
+  z-index: 0;
+}
+
+.card--tweet cite small {
+  display: block;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.card--tweet .icon {
+  display: inline-block;
+  fill: rgba(14, 30, 37, 0.09);
+  height: 1.3em;
+  vertical-align: middle;
+  width: 1.3em;
+}
+
+.validation a {
+  color: #00ad9f;
+  outline-color: #00c2b2;
+  text-decoration: none;
+}
+
+.validation .button {
+  margin-top: 0.8rem;
+  background: #00ad9f;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 0.382em 1em;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
 }
