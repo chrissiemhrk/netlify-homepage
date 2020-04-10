@@ -6,7 +6,7 @@ body {
   margin: 0;
   height: 0;
   position: relative;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -60,9 +60,24 @@ ul {
 }
 
 .section {
-  margin-top: -6.854em;
-  padding-bottom: 6.854em;
-  padding-top: 1.618em;
+  margin-top: -1.618em;
+  padding-bottom: 2.618em;
+  height: 95vh;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0e1e25;
+  font-weight: 500;
+  margin: 1.618em auto 0;
 }
 
 /* Navbar */
@@ -329,8 +344,9 @@ ul {
 }
 
 .core .grid {
-  counter-reset: step;
   margin-bottom: -2.618em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .core li {
@@ -383,7 +399,13 @@ ul {
 
 /* Beyond Section */
 
-.grid {
+.beyond h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.beyond .grid {
   display: flex;
   flex-direction: column;
   font-size: 0.85rem;
@@ -392,12 +414,35 @@ ul {
   padding: 0;
 }
 
-.beyond .media {
+.media {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.85rem;
+  justify-content: center;
+  margin: 1.618em auto auto;
+  text-align: left;
   max-width: 37.577em;
 }
 
 .media-body {
   max-width: 29.03em;
+}
+
+.grid--alternate .media:nth-child(odd) .media-img {
+  margin-left: 0;
+  margin-right: 2.618em;
+  order: -1;
+}
+
+.grid--alternate .media {
+  margin-top: 1.618em;
+  padding: 0;
+}
+
+.beyond .media img {
+  margin-left: 2.618em;
+  order: -1;
 }
 
 .media-img svg {
@@ -408,21 +453,52 @@ ul {
 
 /* Benefits Section */
 
-.benefits h2 {
+.benefits h2,
+.benefits h3 {
   color: #fff;
+}
+
+.benefits h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.benefits .media {
+  color: #fff;
+}
+
+.benefits .grid {
+  display: flex;
+  font-size: 0.85rem;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.benefits .media-img {
+  margin-left: 0;
+  margin-right: 2.618em;
+  order: 1;
 }
 
 .media-body {
   max-width: 29.03em;
 }
 
-.section footer {
+.benefits footer {
   font-size: 0.85rem;
-  margin-top: 1.618em;
+  margin-top: 2.618rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.section footer li {
+.benefits footer li {
   margin-top: 1em;
+}
+
+.benefits footer li a {
+  color: #fff;
 }
 
 .benefits .button {
@@ -487,6 +563,7 @@ ul {
   border-radius: 0.5em;
   box-shadow: 5px 5px 25px rgba(118, 118, 118, 0.15);
   margin-bottom: 1.618em;
+  margin-top: 4rem;
   overflow: auto;
   text-align: left;
 }
@@ -508,6 +585,7 @@ ul {
 }
 
 /* Validation Section */
+
 .scrollable-wrapper {
   margin-top: 2.618em;
   overflow: hidden;
