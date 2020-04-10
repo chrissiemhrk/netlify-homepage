@@ -386,3 +386,104 @@ li {
   margin: auto;
   max-width: 100%;
 }
+
+/* Benefits Section */
+
+.benefits h2 {
+  color: #fff;
+}
+
+.media-body {
+  max-width: 29.03em;
+}
+
+.section footer {
+  font-size: 0.85rem;
+  margin-top: 1.618em;
+}
+
+.section footer li {
+  margin-top: 1em;
+}
+
+.benefits .button {
+  margin-top: 0.8rem;
+  background: #00ad9f;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 0.382em 1em;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.gradient {
+  background-color: #080067;
+  background-image: linear-gradient(0deg, rgba(0, 7, 88, 0.8), #080067);
+  overflow: hidden;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+
+/* Wave */
+.wave {
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.wave svg {
+  fill: currentColor;
+  height: auto;
+  margin-left: -1%;
+  width: 102%;
+}
+
+/* Hiring Section */
+.card-hiring {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-hiring {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  --home-card-bg: #fff;
+  background: var(--home-card-bg);
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 25px rgba(118, 118, 118, 0.15);
+  margin-bottom: 1.618em;
+  overflow: auto;
+  text-align: left;
+}
+
+.card-photo-hiring {
+  background-image: url(/img/careers/4e309e6…/netlify-team-at-jamstack-conf.jpg);
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content {
+  padding: 1.15em 1.85em;
+}
+
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+}
