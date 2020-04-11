@@ -698,7 +698,6 @@ svg[hidden] {
 .site-footer {
   color: rgba(14, 30, 37, 0.38);
   font-size: 0.85rem;
-  padding-bottom: 2.618em;
 }
 
 .site-footer-wrapper {
@@ -722,8 +721,8 @@ svg[hidden] {
 
 .site-footer-infos {
   margin: 0 auto;
-  max-width: 30em;
-  text-align: center;
+  max-width: 30rem;
+  text-align: left;
 }
 
 .site-footer-social {
@@ -750,8 +749,13 @@ svg[hidden] {
 
 .site-footer-link {
   color: #0e1e25;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 500;
+}
+
+.site-footer ul {
+  padding: 0;
+  font-size: 1.1rem;
 }
 
 .logo {
@@ -775,7 +779,6 @@ svg[hidden] {
   color: rgba(14, 30, 37, 0.8);
 }
 
-.form-select-optin,
 input:not([type="checkbox"]),
 textarea {
   -webkit-appearance: none;
