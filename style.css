@@ -6,7 +6,6 @@ body {
   margin: 0;
   height: 0;
   position: relative;
-  font-size: 1.5rem;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -50,32 +49,9 @@ li {
   margin-top: 1.618em;
 }
 
-blockquote,
-ol,
-p,
-ul {
-  margin: 1em auto 0;
-  padding: 0;
-}
-
 .section {
   margin-top: -1.618em;
   padding-bottom: 2.618em;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #0e1e25;
-  font-weight: 500;
-  margin: 1.618em auto 0;
 }
 
 .button {
@@ -204,6 +180,7 @@ h6 {
 /* Hero Section */
 .hero {
   padding: 5.483em 0;
+  font-size: 1.5rem;
 }
 
 .hero .container {
@@ -220,6 +197,10 @@ h6 {
 
 .hero .hero-description {
   max-width: 26em;
+}
+
+.hero ul {
+  padding: 0;
 }
 
 .hero p {
@@ -306,12 +287,13 @@ svg[hidden] {
 .LogosTicker__two {
   animation: slide var(--logoSpeed) linear infinite;
 }
+
 /* Case Section */
 .case {
   margin-top: 2.618em;
 }
 
-.card {
+.case .card {
   --card-bg: #fff;
   background: var(--card-bg);
   border-radius: 0.5em;
@@ -319,16 +301,17 @@ svg[hidden] {
   margin-bottom: 1.618em;
   overflow: auto;
   text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
-.card-photo {
+.case .card-photo {
   align-items: flex-end;
   background-position: 50% 50%;
+  background-image: url(https://images.unsplash.com/photo-1557844352-761f2565b576?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
   background-size: cover;
   display: flex;
   justify-content: center;
-  min-height: 8em;
-  min-width: 13em;
   padding: 1em;
   position: relative;
 }
@@ -525,26 +508,6 @@ svg[hidden] {
   color: #fff;
 }
 
-.benefits .button {
-  margin-top: 0.8rem;
-  background: #00ad9f;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 2px 4px 0 rgba(14, 30, 37, 0.12);
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  outline: 0;
-  padding: 0.382em 1em;
-  font-size: 1.2rem;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  z-index: 1;
-}
-
 .gradient {
   background-color: #080067;
   background-image: linear-gradient(0deg, rgba(0, 7, 88, 0.8), #080067);
@@ -581,15 +544,16 @@ svg[hidden] {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-.card {
+.hiring .card {
   --home-card-bg: #fff;
   background: var(--home-card-bg);
   border-radius: 0.5em;
-  box-shadow: 5px 5px 25px rgba(118, 118, 118, 0.15);
   margin-bottom: 1.618em;
   margin-top: 4rem;
   overflow: auto;
   text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .card-photo-hiring {
@@ -597,6 +561,28 @@ svg[hidden] {
   display: block;
   overflow: hidden;
   position: relative;
+}
+
+.hiring .card-photo {
+  align-items: flex-end;
+  background-position: 50% 50%;
+  background-size: cover;
+  justify-content: center;
+  min-height: 8em;
+  min-width: 13em;
+  padding: 1em;
+}
+
+.card-photo--hiring::before {
+  border-bottom: 300px solid transparent;
+  border-left: 120px solid var(--home-card-bg);
+  border-top: 300px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
 }
 
 .card-content {
@@ -695,26 +681,6 @@ svg[hidden] {
   color: #00ad9f;
   outline-color: #00c2b2;
   text-decoration: none;
-}
-
-.validation .button {
-  margin-top: 0.8rem;
-  background: #00ad9f;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 2px 4px 0 rgba(14, 30, 37, 0.12);
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  outline: 0;
-  padding: 0.382em 1em;
-  font-size: 1.2rem;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  z-index: 1;
 }
 
 /* Footer */
