@@ -20,10 +20,6 @@ a {
   text-decoration: none;
 }
 
-p {
-  max-width: 37.577em;
-}
-
 svg {
   fill: currentColor;
 }
@@ -382,7 +378,6 @@ svg[hidden] {
 .core footer {
   font-size: 0.85rem;
   margin-top: 2.618rem;
-  margin-left: 22rem;
   margin-bottom: 1.5rem;
 }
 
@@ -627,15 +622,10 @@ svg[hidden] {
 .validation .card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 40px rgba(14, 30, 37, 0.16);
   color: rgba(14, 30, 37, 0.8);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  font-size: 0.8rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
-  max-width: 23.224em;
   padding: 1.618em;
   position: relative;
   text-align: left;
@@ -666,6 +656,10 @@ svg[hidden] {
   z-index: 0;
 }
 
+.card--tweet a {
+  color: #00ad9f;
+}
+
 .card--tweet cite small {
   display: block;
   font-weight: 400;
@@ -680,7 +674,21 @@ svg[hidden] {
   width: 1.3em;
 }
 
-.validation a {
+.validation .container {
+  text-align: center;
+}
+
+.validation h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.validation p {
+  color: rgba(14, 30, 37, 0.54);
+  font-size: 1.1rem;
+}
+
+.validation #bottom-talktoanexpert {
   color: #00ad9f;
   outline-color: #00c2b2;
   text-decoration: none;
