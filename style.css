@@ -64,7 +64,7 @@ li {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.618em;
   outline: 0;
@@ -73,7 +73,6 @@ li {
   text-align: center;
   text-decoration: none;
   text-shadow: none;
-  transition: all 0.15s ease;
   vertical-align: middle;
   z-index: 1;
 }
@@ -345,6 +344,11 @@ svg[hidden] {
   text-align: center;
 }
 
+.core h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
 .footnote-link {
   color: currentColor;
   opacity: 0.5;
@@ -378,37 +382,18 @@ svg[hidden] {
 .core footer {
   font-size: 0.85rem;
   margin-top: 1.618em;
+  margin-left: 22rem;
 }
 
 .core footer p {
   margin-top: 1.618em;
 }
 
-.core .button {
-  margin-top: 0.8rem;
-  background: #00ad9f;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 2px 4px 0 rgba(14, 30, 37, 0.12);
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  outline: 0;
-  padding: 0.382em 1em;
-  font-size: 1.2rem;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  z-index: 1;
-}
-
 /* Beyond Section */
 
 .beyond h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -425,7 +410,7 @@ svg[hidden] {
   align-items: center;
   display: flex;
   flex-direction: row;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   justify-content: center;
   margin: 1.618em auto auto;
   text-align: left;
@@ -436,6 +421,10 @@ svg[hidden] {
   max-width: 29.03em;
 }
 
+.media-body p {
+  font-size: 1rem;
+  color: rgba(14, 30, 37, 0.54);
+}
 .grid--alternate .media:nth-child(odd) .media-img {
   margin-left: 0;
   margin-right: 2.618em;
@@ -444,6 +433,7 @@ svg[hidden] {
 
 .grid--alternate .media {
   margin-top: 1.618em;
+  margin-bottom: 1.618em;
   padding: 0;
 }
 
