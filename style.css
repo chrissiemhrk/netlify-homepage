@@ -32,7 +32,6 @@ svg {
 .container {
   margin: 0 auto;
   max-width: 75rem;
-  padding: 0 1em;
   position: relative;
 }
 
@@ -245,13 +244,14 @@ h6 {
 }
 
 /* Customers Section */
-.customers h2 {
-  font-size: 2rem;
-  line-height: 1.333;
+.customers .h3 {
+  padding-bottom: 0;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 
-.logos {
+.LogosTicker {
+  --logoSpeed: 90s;
   --fadeColor: white;
   --fadeColorTransparent: rgba(255, 255, 255, 0);
   --logosColor: rgb(14, 30, 37);
@@ -259,7 +259,7 @@ h6 {
   position: relative;
 }
 
-.logos-fade {
+.LogosTicker__fade {
   background: linear-gradient(
     to right,
     var(--fadeColor) 0,
@@ -275,7 +275,7 @@ h6 {
   z-index: 2;
 }
 
-.logos-container {
+.LogosTicker__container {
   display: flex;
   flex-wrap: nowrap;
   opacity: 0.5;
@@ -283,18 +283,29 @@ h6 {
   color: var(--logosColor);
 }
 
-.logos-one {
-  animation: slide 90s linear infinite;
+.LogosTicker__one {
+  animation: slide var(--logoSpeed) linear infinite;
 }
 
-.logos-two {
-  animation: slide 90s linear infinite;
-}
-
-.logos-container svg {
+.LogosTicker__container svg {
   margin: 0 1.3em;
 }
 
+svg[hidden] {
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: -1;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.LogosTicker__two {
+  animation: slide var(--logoSpeed) linear infinite;
+}
 /* Case Section */
 .case {
   margin-top: 2.618em;
