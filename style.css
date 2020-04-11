@@ -381,12 +381,14 @@ svg[hidden] {
 
 .core footer {
   font-size: 0.85rem;
-  margin-top: 1.618em;
+  margin-top: 2.618rem;
   margin-left: 22rem;
+  margin-bottom: 1.5rem;
 }
 
 .core footer p {
   margin-top: 1.618em;
+  color: rgba(14, 30, 37, 0.54);
 }
 
 /* Beyond Section */
@@ -406,7 +408,7 @@ svg[hidden] {
   padding: 0;
 }
 
-.media {
+.beyond .media {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -421,10 +423,11 @@ svg[hidden] {
   max-width: 29.03em;
 }
 
-.media-body p {
+.beyond .media-body p {
   font-size: 1rem;
   color: rgba(14, 30, 37, 0.54);
 }
+
 .grid--alternate .media:nth-child(odd) .media-img {
   margin-left: 0;
   margin-right: 2.618em;
@@ -450,23 +453,29 @@ svg[hidden] {
 
 /* Benefits Section */
 
-.benefits h2,
 .benefits h3 {
-  color: #fff;
+  font-size: 1.5rem;
 }
 
 .benefits h2 {
-  font-size: 2rem;
+  color: #fff;
+  font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
+  margin: 1.618em auto 0;
 }
 
 .benefits .media {
   color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 1.618em auto auto;
+  text-align: left;
 }
 
 .benefits .grid {
   display: flex;
+  flex-direction: row;
   font-size: 0.85rem;
   list-style: none;
   margin: 0 auto;
@@ -474,13 +483,20 @@ svg[hidden] {
 }
 
 .benefits .media-img {
-  margin-left: 0;
-  margin-right: 2.618em;
+  margin-top: 2.5rem;
+  margin-right: 2rem;
   order: 1;
 }
 
-.media-body {
+.benefits .media-body {
   max-width: 29.03em;
+}
+
+.benefits .media-body p {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .benefits footer {
@@ -506,23 +522,6 @@ svg[hidden] {
   z-index: 1;
 }
 
-/* Wave */
-.wave {
-  color: #fff;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  transform: translateY(-50%);
-  width: 100%;
-}
-
-.wave svg {
-  fill: currentColor;
-  height: auto;
-  margin-left: -1%;
-  width: 102%;
-}
-
 /* Hiring Section */
 .card-hiring {
   flex-direction: row-reverse;
@@ -542,14 +541,19 @@ svg[hidden] {
   margin-top: 4rem;
   overflow: auto;
   text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
 }
 
 .card-photo-hiring {
-  background-image: url(/img/careers/4e309e6…/netlify-team-at-jamstack-conf.jpg);
+  background-image: url(https://images.unsplash.com/photo-1523384197172-aa61d18ab654?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
   display: block;
   overflow: hidden;
+  position: relative;
+}
+
+.card-hiring {
+  flex-direction: row-reverse;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -558,12 +562,12 @@ svg[hidden] {
   background-position: 50% 50%;
   background-size: cover;
   justify-content: center;
-  min-height: 8em;
-  min-width: 13em;
-  padding: 1em;
+  min-height: 8rem;
+  min-width: 20rem;
+  padding: 1rem;
 }
 
-.card-photo--hiring::before {
+.card-photo-hiring::before {
   border-bottom: 300px solid transparent;
   border-left: 120px solid var(--home-card-bg);
   border-top: 300px solid transparent;
@@ -576,7 +580,16 @@ svg[hidden] {
 }
 
 .card-content {
-  padding: 1.15em 1.85em;
+  padding: 1.1rem 1.8rem;
+}
+
+.card-content h3 {
+  font-size: 1.7rem;
+}
+
+.card-content p {
+  color: rgba(14, 30, 37, 0.54);
+  font-size: 1.1rem;
 }
 
 .card-links {
