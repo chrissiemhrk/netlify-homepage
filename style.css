@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+@import "config.css";
 
 body {
   margin: 0;
@@ -25,6 +23,7 @@ svg {
 }
 
 .container {
+  box-sizing: content-box;
   margin: 0 auto;
   max-width: 75rem;
   position: relative;
@@ -75,13 +74,27 @@ li {
 
 /* Navbar */
 
+.site-header {
+  background: linear-gradient(
+    90deg,
+    rgba(17, 63, 135, 1) 0%,
+    rgba(19, 134, 135, 1) 100%
+  );
+  z-index: 99;
+  padding-top: 0.618rem;
+}
+
 .nav {
   display: flex;
 }
 
-.hr {
+.nav .hr {
   position: relative;
   border-bottom: 2px solid rgba(14, 30, 37, 0.09);
+}
+
+.nav a {
+  color: rgba(255, 254, 254, 0.911);
 }
 
 .primary-nav {
@@ -174,8 +187,15 @@ li {
 
 /* Hero Section */
 .hero {
-  padding: 5.483em 0;
+  padding: 5rem 0;
   font-size: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(17, 63, 135, 1) 0%,
+    rgba(19, 134, 135, 1) 100%
+  );
+  color: #fff;
 }
 
 .hero .container {
@@ -200,6 +220,10 @@ li {
 
 .hero p {
   margin-left: 0;
+}
+
+.hero a {
+  color: #fff;
 }
 
 .hero li {
@@ -448,6 +472,10 @@ svg[hidden] {
 
 /* Benefits Section */
 
+.benefits {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
 .benefits h3 {
   font-size: 1.5rem;
 }
@@ -498,7 +526,7 @@ svg[hidden] {
   font-size: 0.85rem;
   margin-top: 2.618rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .benefits footer li {
@@ -700,15 +728,16 @@ svg[hidden] {
   font-size: 0.85rem;
 }
 
+.site-footer .hr {
+  position: relative;
+  border-top: 2px solid rgba(14, 30, 37, 0.09);
+}
+
 .site-footer-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
   padding: 2.618em 0;
-}
-
-.hr {
-  border-top: 2px solid rgba(14, 30, 37, 0.09);
 }
 
 .site-footer-nav {
