@@ -377,6 +377,7 @@ svg[hidden] {
     auto-fill,
     minmax(var(--auto-grid-min-size), 1fr)
   );
+  padding-left: 0;
 }
 
 .core li {
@@ -742,6 +743,7 @@ svg[hidden] {
 .site-footer-nav {
   color: #0e1e25;
   display: grid;
+  flex-basis: 100%;
   flex-grow: 1;
   grid-gap: 2.5em;
   grid-template-columns: repeat(auto-fit, minmax(7em, max-content));
@@ -980,16 +982,20 @@ label {
 
   h2,
   h1 {
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1rem + 1vw);
     margin-top: 1rem;
   }
 
   .container {
-    padding: 5rem;
+    padding: 2rem;
+  }
+
+  .nav li {
+    display: none;
   }
 
   .nav {
-    display: none;
+    padding: 2.5rem;
   }
 
   .hero {
@@ -1016,6 +1022,63 @@ label {
 
   .benefits .grid {
     display: block;
+  }
+
+  .beyond .media {
+    display: block;
+  }
+
+  .benefits {
+    clip-path: none;
+  }
+
+  .hiring .card-photo {
+    display: none;
+  }
+
+  .card--tweet {
+    font-size: 0.7rem;
+  }
+
+  .menu-button {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+  .container {
+    max-width: 0 auto;
+    padding: 2rem;
+  }
+
+  .menu-button {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  .nav {
+    padding: 2.5rem;
+  }
+
+  .core {
+    display: grid;
+  }
+
+  .beyond .media {
+    display: block;
+  }
+
+  .benefits .grid {
+    display: block;
+  }
+
+  .benefits .media-body {
+    margin-left: 10rem;
   }
 
   .benefits {
