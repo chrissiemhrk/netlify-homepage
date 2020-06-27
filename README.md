@@ -1,3 +1,3 @@
 # netlify-homepage
 
-Recreation of the netlify homepage
+Netlify homepage clone
